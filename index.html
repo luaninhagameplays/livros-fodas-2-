@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIVROS FODAS</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+   
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Todos os livros à sua disposição!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Encontre o que precisa">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Livros mais lidos no momento</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/a vida inivisivel.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/it.png"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/o iluminado_.png" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/suicidas_.png" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/bom dia .png" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/a paciente_.png" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo"></h3>
+          <h2 class="descrição__titulo-livro">Stephen King</h2>
+          <p class="descrição__texto">
+            Stephen King é um escritor americano famoso por seus romances de terror, suspense e ficção científica. Com obras icônicas como *Carrie*, *O Iluminado* e *It - A Coisa*, King explora o medo e a psicologia humana em histórias envolventes e aterrorizantes. Suas obras já foram adaptadas para o cinema e a televisão, consolidando-o como um dos mestres do gênero e um dos autores mais populares da literatura contemporânea.
+          </p>
+        </div>
+        <img src="img/king.png" class="descrição__imagem" />
+      </div>
+   
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais avaliados</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/jantar.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/assasinato _.png" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/o lar_.png" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/o desapqarecimento_.png" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/a verdade .png" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/nao sobrou.png" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <h3 class="descrição__titulo"></h3>
+          <h2 class="descrição__titulo-livro">Agatha Christie </h2>
+          <p class="descrição__texto">Agatha Christie foi uma escritora britânica famosa por seus romances de mistério e suspense, sendo uma das autoras mais vendidas de todos os tempos. Conhecida como a "Rainha do Crime," ela criou personagens icônicos como o detetive Hercule Poirot e Miss Marple. Entre suas obras mais famosas estão *Assassinato no Expresso do Oriente* e *O Caso dos Dez Negrinhos*. Suas tramas envolventes e finais surpreendentes revolucionaram o gênero policial e garantiram a ela um lugar permanente na literatura mundial.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/agatha.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+    
+
+
+
+  </section>
+
+  
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo POGGERS</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
